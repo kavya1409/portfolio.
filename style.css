@@ -1,0 +1,30 @@
+.bg-image{  
+    background-image: url("https://st4.depositphotos.com/12902820/27934/i/1600/depositphotos_279349976-stock-photo-school-supplies-bottom-border-top.jpg");
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100vw;
+    background-position:center;
+    background-size: cover;
+    margin-top: 0px;
+    } 
+
+.navbar{
+    margin-top: 12px;
+    padding: 10px;
+    height: 30px;
+    font-family:cursive;
+    color: rgb(20, 34, 34);
+}
+.navbar-brand{
+    /* border:0px solid white; */
+     /* background-color:white; */
+    border-radius:100%;
+}
+.i{
+    margin-top:10%;
+    margin-left: 40%;
+    font-family: cursive;
+}
+.j{
+    margin-left:4; ;
+}
