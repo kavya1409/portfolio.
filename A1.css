@@ -1,0 +1,10 @@
+body{
+    background-color: tan;
+    background-image:url(https://th.bing.com/th/id/R045b3f545f4bc9f8f401b1bcbf6ff72e?rik=oQyxzMleNv0Unw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fFree-live-background-wallpaper.jpg&ehk=gYpPDS8g99UaTRAQUNN0sXyoCbUl9tevQV%2bbWvFBY6g%3d&risl=&pid=ImgRaw),url('https://th.bing.com/th/id/R045b3f545f4bc9f8f401b1bcbf6ff72e?rik=oQyxzMleNv0Unw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fFree-live-background-wallpaper.jpg&ehk=gYpPDS8g99UaTRAQUNN0sXyoCbUl9tevQV%2bbWvFBY6g%3d&risl=&pid=ImgRaw'),url('https://th.bing.com/th/id/R045b3f545f4bc9f8f401b1bcbf6ff72e?rik=oQyxzMleNv0Unw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fFree-live-background-wallpaper.jpg&ehk=gYpPDS8g99UaTRAQUNN0sXyoCbUl9tevQV%2bbWvFBY6g%3d&risl=&pid=ImgRaw');
+    background-size:200px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position-x: 0px,center,right;
+    background-position-y: 0px,center,500px;
+    background-attachment: fixed;
+}

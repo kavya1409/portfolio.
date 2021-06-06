@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    font-size: 20px;
+}
+ul.h{
+    list-style-type: none;
+    padding: 0px ;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(2, 90, 17);}
+li#1{float: left;}
+li a{
+    float: left;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;}
+.active{background-color: crimson;}
+a:hover:not(.active){background-color: darkgoldenrod;}
+ul#m{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    width:10%;
+    background-color: rgb(2, 90, 17);
+    position: fixed;
+    height:100%;}
+p{
+    font-size: 35px;
+    margin:200px;
+    
+    color:chocolate;
+    animation-name:animate__bounce;
+    animation-duration: 5s;
+    animation-iteration-count:infinite ;
+}
+@keyframes animate__bounceIN{
+
+}
+
