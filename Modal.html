@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    input[type=text]{
+        margin-bottom: 10px;
+        border:0px solid ;
+    }
+    input[type=password]{
+        border:0px solid;
+    }
+
+</style>
+</head>
+<body>
+    <h1 class="display-3 text-danger">Modals</h1>
+    <button type="button" data-toggle="modal" data-target="#log" class="btn btn-primary">click here for Modals</button>
+<div class="modal" id="log"aria-labelledby="in"role="dailog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class=" modal-title display-5" id="in" >Login Page</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <script>
+                    function login(){
+                    
+                        var user=document.getElementById("user").value;
+                        var pwd=document.getElementById("pwd").value;
+                        var text;
+                        var message=document.getElementById("message");
+                        message.style.color ="red";
+                        if(user.length<5){
+                             text="please enter valid User id";
+                         message.innerHTML=text;            
+                return false;
+                        }
+                        if(pwd.match(/[a-z]/g)&&pwd.match(/[A-Z]/g)&&pwd.match(/[0-9]/g)&&pwd.match(/[^a-za-z/d]/g)&&pwd.length>=8){
+                          return true;
+                        }
+                        else{
+                            
+                            alert("password should contain these characters :1)upper case character  2)lower case character 3)numeric 4)minimun length of pwd is 8 characters ");
+                           return false;
+                           
+                        }
+                    }
+                    </script>
+                
+                <form onsubmit="return login()">
+                    <P id="message"></P>
+                <div class="input-field">USER ID : <input type="text" class="bg-light" id="user"></div>
+               <div class="input-field"  >PASSWORD : <input type="password" class="bg-light"  id="pwd"></div>
+                 
+                 <div class="input-field"><input type="submit" value="LOGIN"></div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="close">Close</button>
+                <button type="button"  class="btn btn-success">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

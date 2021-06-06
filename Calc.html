@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    .jumbo{
+        text-align: center;
+        margin-top: 55px;
+    }
+    input[type=button]{
+        margin:1px;
+    }
+    input[type=text]{
+        border-radius: 10px;
+        border: 0px solid wheat;
+        background-color: cadetblue;
+        margin: 5px;
+    }
+    #btn{
+        background-color: rgb(159, 231, 183);
+    }
+</style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="jumbo">
+            <h1 class="display-5">Caluclator</h1>
+    <form name="myform">
+    <input type="text" name="result">
+    <div>
+    <input type="button" value="7" class="btn btn-warning" onclick="myform.result.value +='7'">
+    <input type="button" value="8" class="btn btn-warning" onclick="myform.result.value +='8'">
+    <input type="button" value="9"class="btn btn-warning" onclick="myform.result.value +='9'">
+    <input type="button" value="x"class="btn btn-danger" onclick="myform.result.value +='*'"> 
+    </div>
+    <div>
+        <input type="button" value="6" class="btn btn-warning" onclick="myform.result.value +='6'">
+        <input type="button" value="5"class="btn btn-warning" onclick="myform.result.value +='5'">
+        <input type="button" value="4"class="btn btn-warning" onclick="myform.result.value +='4'">
+        <input type="button" value="-"class="btn btn-danger" onclick="myform.result.value +='-'">
+        </div>
+        <div>
+            <input type="button" value="3"  class="btn btn-warning" onclick="myform.result.value +='3'">
+            <input type="button" value="2" class="btn btn-warning" onclick="myform.result.value +='2'">
+            <input type="button" value="1" class="btn btn-warning" onclick="myform.result.value +='1'">
+            <input type="button" value="+" class="btn btn-danger" onclick="myform.result.value +='+'">
+            </div>
+            <div>
+                <input type="button" value="0" class="btn btn-warning" onclick="myform.result.value +='0'">
+                <input type="button" value="/" class="btn btn-danger" onclick="myform.result.value +='/'">
+                <input type="button" value="%" class="btn btn-danger" onclick="myform.result.value +='%'">
+                <input type="button" value="=" class="btn btn-success" onclick="myform.result.value =eval(myform.result.value)">
+                </div>
+                <input type="button" value="Clear" onclick="myform.result.value=' '" class="btn" id="btn">
+    </form>
+</div></div>
+</body>
+</html>
